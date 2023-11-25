@@ -1,16 +1,25 @@
 import 'package:bloc/bloc.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:notesense/app/core/extensions/objectx.dart';
 import 'package:notesense/app/core/observers/bloc_observer.dart';
 
 class AppRunner {
-  Future<void> preAppRun() async {
+  static Future<void> preAppRun() async {
     Bloc.observer = const AppBlocObserver();
+    _setupExceptionLogger();
     await _loadEnv();
   }
 
-  Future<void> postAppRun() async {}
+  static Future<void> postAppRun() async {}
 }
 
 Future<void> _loadEnv() async {
   await dotenv.load();
+}
+
+void _setupExceptionLogger() {
+  FlutterError.onError = (details) {
+    (details.exceptionAsString(), stackTrace: details.stack).logError();
+  };
 }
