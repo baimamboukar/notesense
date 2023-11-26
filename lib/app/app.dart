@@ -25,6 +25,7 @@ class _NoteSenseState extends State<NoteSense> {
         title: 'notesense',
         routerConfig: GetIt.I<NoteSenseRouter>().config(),
         theme: NoteSenseTheme.light,
+        themeMode: ThemeMode.light,
         darkTheme: NoteSenseTheme.dark,
       ),
     );

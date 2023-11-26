@@ -20,5 +20,6 @@ ColorScheme _getColorScheme(Brightness brightness) {
 const black = Color(0xFF020202);
 const smoke = Color(0xFFF7ECC9);
 const blue = Color(0xFF9AB5DC);
+const green = Color(0xFFA8D672);
 const orange = Color(0xFFEA7A54);
 const yellow = Color(0xFFF5D14A);
