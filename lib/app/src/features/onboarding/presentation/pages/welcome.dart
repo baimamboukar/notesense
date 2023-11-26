@@ -10,7 +10,7 @@ class Welcome extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: TextButton(
-          onPressed: () => context.router.pushNamed('/onboarding'),
+          onPressed: () => context.router.pushNamed('/home'),
           child: const Text('Take me to Notes'),
         ),
       ),

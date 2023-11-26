@@ -10,5 +10,6 @@ class NoteSenseRouter extends $NoteSenseRouter {
   List<AutoRoute> get routes => [
         AutoRoute(page: Welcome.page, path: '/', initial: true),
         AutoRoute(page: Onboarding.page, path: '/onboarding'),
+        AutoRoute(page: NoteSenseRoute.page, path: '/home'),
       ];
 }
