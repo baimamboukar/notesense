@@ -7,8 +7,13 @@ class Welcome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Theme.of(context).primaryColor,
+    return Scaffold(
+      body: Center(
+        child: TextButton(
+          onPressed: () => context.router.pushNamed('/onboarding'),
+          child: const Text('Take me to Notes'),
+        ),
+      ),
     );
   }
 }

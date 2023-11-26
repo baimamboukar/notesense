@@ -14,8 +14,8 @@ import 'package:notesense/app/src/features/onboarding/presentation/pages/onboard
 import 'package:notesense/app/src/features/onboarding/presentation/pages/welcome.dart'
     as _i2;
 
-abstract class $Router extends _i3.RootStackRouter {
-  $Router({super.navigatorKey});
+abstract class $NoteSenseRouter extends _i3.RootStackRouter {
+  $NoteSenseRouter({super.navigatorKey});
 
   @override
   final Map<String, _i3.PageFactory> pagesMap = {

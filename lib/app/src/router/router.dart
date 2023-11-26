@@ -5,7 +5,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:notesense/app/src/router/router.gr.dart';
 
 @AutoRouterConfig()
-class Router extends $Router {
+class NoteSenseRouter extends $NoteSenseRouter {
   @override
   List<AutoRoute> get routes => [
         AutoRoute(page: Welcome.page, path: '/', initial: true),
