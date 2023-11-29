@@ -10,7 +10,7 @@ dependencies:
   auto_route: ^7.8.4
   auto_route_generator: ^7.3.2
   bloc: ^8.1.2
-  build_runner: ^2.4.6
+  build_runner: ^2.4.7
   dartz: ^0.10.1
   dio: ^5.3.4
   flex_color_scheme: ^7.3.1
